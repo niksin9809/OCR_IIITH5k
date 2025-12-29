@@ -1,0 +1,8 @@
+.DS_Store
+*.onnx
+*.onnx.data 
+runs/
+checkpoints/
+logs/
+.in
+*.pth

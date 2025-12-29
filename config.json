@@ -1,0 +1,37 @@
+{
+    "data": {
+        "train_csv": "./archive/traindata.csv",
+        "train_dir": "./archive/IIIT5K-Word_V3.0/IIIT5K",
+        "test_csv": "./archive/testdata.csv",
+        "test_dir": "./archive/IIIT5K-Word_V3.0/IIIT5K",
+        "image_height": 64,
+        "image_width": 256,
+        "max_len": 32
+    },
+    "model": {
+        "resnet_layers": 18,
+        "d_model": 256,
+        "nhead": 4,
+        "num_encoder_layers": 2,
+        "num_decoder_layers": 2,
+        "pretrained": true,
+        "dropout": 0.2
+    },
+    "training": {
+        "device": "mps",
+        "batch_size": 32,
+        "resnet_learning_rate": 0.0001,
+        "transformer_learning_rate": 0.0001,
+        "weight_decay": 1e-4,
+        "label_smoothing": 0.1,
+        "grad_clip": 1.0,
+        "freeze_epochs": 40,
+        "unfreeze_epochs": 300,
+        "save_path": "checkpoints/ocr_model.pth",
+        "log_dir": "runs/ocr_experiment",
+        "exp_name": "new",
+        "scheduler_patience": 20,
+        "scheduler_factor": 0.5,
+        "k_folds": 5
+    }
+}

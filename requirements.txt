@@ -1,0 +1,10 @@
+torch
+torchvision
+pandas
+numpy
+Pillow
+tensorboard
+scikit-learn
+matplotlib
+ipykernel
+onnxruntime
