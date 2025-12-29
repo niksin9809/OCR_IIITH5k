@@ -4,7 +4,9 @@ pandas
 numpy
 Pillow
 tensorboard
-scikit-learn
+scikit-learns
 matplotlib
 ipykernel
 onnxruntime
+straug
+gradio
